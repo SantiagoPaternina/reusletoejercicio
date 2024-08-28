@@ -1,0 +1,30 @@
+/*AFTER*/
+.exciting-text::after {
+    content: " <- EXCITING!";
+    color: green;
+  }
+  
+  .boring-text::after {
+    content: " <- BORING";
+    color: red;
+  }
+/*before*/
+q::before {
+    content: "«";
+    color: blue;
+  }
+  q::after {
+    content: "»";
+    color: red;
+  }
+  /*SELECTION*/
+  p::selection {
+    color: red;
+    background-color: yellow;
+  }
+  /*FIRST LETTER*/
+  p::first-letter {
+    color: red;
+    font-size: 130%;
+  }
+  

@@ -1,0 +1,115 @@
+p:first-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  /*LAST CHILD*/
+  p:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+  /*NTH CHILD*/
+  html {
+    font-family: sans-serif;
+  }
+  
+  span,
+  div em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+  
+  .first span:nth-child(2n + 1),
+  .second span:nth-child(2n + 1),
+  .third span:nth-of-type(2n + 1) {
+    background-color: lime;
+  }
+
+  /*NOT*/
+  .fancy {
+    text-shadow: 2px 2px 3px gold;
+  }
+   p:not(.fancy) {
+    color: green;
+  }
+  body :not(p) {
+    text-decoration: underline;
+  }
+
+  body :not(div):not(span) {
+    font-weight: bold;
+  }
+   body :not(.crazy, .fancy) {
+    font-family: sans-serif;
+  }
+
+  /*NTH-OF-TYPE*/
+p:nth-of-type(2n + 1) {
+    color: red;
+  }
+  
+  p:nth-of-type(2n) {
+    color: blue;
+  }
+  
+  p:nth-of-type(1) {
+    font-weight: bold;
+  }
+
+  /*HOVER*/
+  a {
+    background-color: powderblue;
+    transition: background-color 0.5s;
+  }
+  
+  a:hover {
+    background-color: gold;
+  }
+
+  /*FOCUS*/
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+
+  /*ACTIVE*/
+  a:link {
+    color: blue;
+  } 
+  a:visited {
+    color: purple;
+  } 
+  a:hover {
+    background: yellow;
+  } 
+  a:active {
+    color: lime;
+  }
+
+  /*CHECKED*/
+  div,
+select {
+  margin: 8px;
+}
+input:checked + label {
+  color: red;
+}
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}

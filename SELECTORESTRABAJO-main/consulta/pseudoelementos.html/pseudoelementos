@@ -1,0 +1,11 @@
+::after
+Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada.
+
+::before
+En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.
+
+::selection
+El pseudoelemento de CSS ::selection aplica estilos a la parte de un documento que ha sido resaltada por el usuario (como hacer clic y arrastrar el ratón sobre el texto).
+
+::first-letter
+El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas).

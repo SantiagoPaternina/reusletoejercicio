@@ -1,0 +1,174 @@
+/*menu*/
+.cabecera{
+    width: 100%;
+    height: 100px;
+    background-color: #b2b2b2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 85px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li{
+    margin-right: 15px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+/*sesion banner*/
+.banner-principal{
+    width: 100%;
+    height: 500px;
+    background-image: url(../imagenes/banner.jpg.jpg);
+    background-size: 100%;
+    background-position: 0 -100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner-principal div{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    margin-left: 50px;
+}
+.banner-principal div h1{
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+.banner-principal div p,
+.banner-principal div a{
+    font-size: 20px;
+    text-align: center;
+}
+.banner-principal div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+/*sesion flotante*/
+.flotar{
+    display: flex;
+    justify-content: center;
+}
+.flotar div,
+.slider div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    position: absolute;
+    margin-top: -80px;
+}
+.flotar div img,
+.galeria div figure img,
+.slider div img{
+    width: 250px;
+}
+/*sesion galeria*/
+.galeria,
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria h2,
+.blog > h2,
+.slider h2{
+    font-size: 50px;
+    margin-top: 140px;
+    text-align: center;
+}
+.galeria div,
+.blog div,
+.testimonio article{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.galeria div figure{
+    margin: 7px;
+}
+.galeria div figure figcaption{
+    text-align: center;
+}
+/*sesion blog*/
+.blog div{
+    justify-content: space-between;
+}
+.blog div article{
+    width: 48%;
+}
+.blog div article img{
+    width: 100%;
+}
+/*sesion slider*/
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.slider div{
+    position: relative;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+/*sesion testimonio*/
+.testimonio{
+    display: flex;
+    justify-content: center;
+}
+.testimonio article{
+    margin-top: 100px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.testimonio article figure img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+/*pie de pagina*/
+.pie{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b2b2b2;
+}
+.pie a div{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.facebook-icon{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.facebook-icon:hover
+{
+    transform: scale(1.1);
+}
+/*selector avanzado*/
+p::selection{
+    background-color: #b2b2b2;
+    color: black;
+}
+.bottom:active{
+    color: #b2b2b2;
+}
